@@ -49,9 +49,10 @@ export default new Router()
     fromClient({ page: 'Subcategory', somethingElse: 123 }),
     fromServer('./subcategory/subcategory-handler')
   )
+  .get('/staticPage', fromClient({ page: 'Static' }), fromServer('./staticPage/staticPage-handler'))
   .get(
-    '/staticPage/:name',
-    fromClient({ page: 'Static'}),
+    '/staticPage/:id',
+    fromClient({ page: 'Static' }),
     fromServer('./staticPage/staticPage-handler')
   )
   .fallback(

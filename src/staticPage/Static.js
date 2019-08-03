@@ -17,6 +17,11 @@ export default class StaticPage extends Component {
   render() {
     const { staticModel, classes } = this.props
 
-    return <Container className={classes.main}>{staticModel.testVariable}</Container>
+    return (
+      <Container className={classes.main}>
+        {staticModel.testVariable}
+        {staticModel.name && <div>{staticModel.name}</div>}
+      </Container>
+    )
   }
 }
