@@ -80,7 +80,7 @@
         "mst-middlewares": "^3.10.2",
         "nodemon": "^1.18.9",
         "prop-types": "^15.6.1",
-        "qs": "^6.6.0",
+        "qs": "^6.6.1",
         "raw-loader": "^0.5.1",
         "react": "^16.8.6",
         "react-dev-utils": "^5.0.1",
